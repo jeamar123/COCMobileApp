@@ -1,0 +1,19 @@
+<!-- PassCode -->
+    <ons-template id="passcode.html">
+        <ons-page>
+          <ons-toolbar fixed-style>
+            <div class="left">
+              <ons-toolbar-button onclick="myNavigator.popPage({ animation: 'fade' });"><ons-icon icon="ion-arrow-left-c" fixed-width="false"></ons-icon></ons-toolbar-button>
+            </div>
+          </ons-toolbar>
+
+          <div class="login-form">
+            <input type="password" class="text-input--underbar" placeholder="Enter Passcode" value="">
+            <br><br>
+            <ons-button modifier="large" class="login-button" onclick="myNavigator.popPage({ animation: 'fade' });">Submit</ons-button>
+            <br><br>
+          </div>
+
+        </ons-page>
+    </ons-template>
+    

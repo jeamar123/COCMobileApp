@@ -1,0 +1,32 @@
+ <!-- HOME PAGE -->
+
+    <ons-template id="home.html">
+        <ons-page>
+          <ons-toolbar fixed-style>
+            <div class="left">
+              <ons-toolbar-button ng-click="confirm_logout();"><ons-icon icon="ion-share" flip="horizontal" fixed-width="false" style="vertical-align: -4px; font-size: 30px;"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center"></div>
+            <div class="right">
+              <ons-toolbar-button onclick="myNavigator.pushPage('passcode.html')"><ons-icon icon="ion-gear-a" style="vertical-align: -4px; font-size: 28px;"></ons-icon></ons-toolbar-button>
+            </div>
+          </ons-toolbar>
+
+          <div class="profile-card">
+
+            <img src="assets/img/user.png" class="profile-image">
+            <div class="profile-name">Welcome Dave Graham !</div>
+            <div class="profile-id">Criminology Review Center</div>
+            <!-- <div class="profile-desc">Freelance designer, software engineer and cyclist</div> -->
+
+          </div>
+
+          <div class="profile-btns">
+            <button class="button button--large" onclick="myNavigator.pushPage('chapter-list.html')">Reviewer</button>
+            <button class="button button--large--cta" onclick="myNavigator.pushPage('exam-list.html')">Exams</button>
+            <button class="button button--large" onclick="myNavigator.pushPage('results-list.html')">Results</button>
+          </div>
+
+
+        </ons-page>
+    </ons-template>

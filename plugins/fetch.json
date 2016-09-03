@@ -1,0 +1,36 @@
+{
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.mesmotronic.plugins.fullscreen": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mesmotronic/cordova-fullscreen-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-navigationbar": {
+        "source": {
+            "type": "git",
+            "url": "http://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.navigationbar",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

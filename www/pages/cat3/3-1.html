@@ -1,0 +1,21 @@
+ <!-- CHAPTER -->
+
+    <ons-template id="3-1.html">
+        <ons-page>
+            <ons-toolbar fixed-style>
+              <div class="left">
+                <ons-toolbar-button onclick="myNavigator.popPage({ animation: 'fade' });"><ons-icon icon="ion-arrow-left-c" fixed-width="false"></ons-icon></ons-toolbar-button>
+              </div>
+              <div class="center"></div>
+              <div class="right">
+                <ons-toolbar-button>
+                  <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+                </ons-toolbar-button>
+              </div>
+            </ons-toolbar>
+            <div id="sss" style="margin:0px 6px 10px 8px">
+            <div ng-include="'assets/files/cat3/1.htm'" ></div>             
+              <!-- <iframe src="assets/js/ViewerJS/#../files/cat3/1.pdf" width='322' height='400' allowfullscreen webkitallowfullscreen></iframe> -->
+            </div>  
+        </ons-page>    
+    </ons-template>

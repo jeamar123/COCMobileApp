@@ -1,0 +1,141 @@
+<!-- Result -->
+    <ons-template id="result.html">
+        <ons-page>
+            <ons-toolbar fixed-style>
+              <div class="left">
+                <ons-toolbar-button onclick="myNavigator.popPage({ animation: 'fade' });"><ons-icon icon="ion-arrow-left-c" fixed-width="false"></ons-icon></ons-toolbar-button>
+              </div>
+              <div class="center"></div>
+              <div class="right">
+                <ons-toolbar-button>
+                  <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+                </ons-toolbar-button>
+              </div>
+            </ons-toolbar>
+
+            <ons-list class="timeline" modifier="inset">
+              <ons-list-item class="timeline-li ">
+                <ons-row>
+                  <ons-col>
+                    <label class="evaluation">
+                      <span >Score : <label id="score"></label></span>
+                      &nbsp;<span>Grade : <label id="grade"></label></span>
+                    </label>
+                  </ons-col>
+                </ons-row>
+                <ons-row>
+                  <ons-col>
+                    <label class="evaluation">
+                      <span >Evaluation : <label id="eval"></label></span>
+                    </label>
+                  </ons-col>
+                </ons-row>
+              </ons-list-item>
+              <ons-list-item class="timeline-li " ng-repeat="i in progress_items">
+                <ons-row>     
+                  <ons-col>
+                    <div class="evaluation"><label> {{i.exam_question}}</label></div>
+                    <br>
+                  </ons-col>
+                </ons-row>
+                <ons-row >
+                  <ons-col>
+                    <div class="form-group">
+                      <div class="radio">
+                        <div ng-if="i.ans == 1 && i.exam_correct_answer == 1 ">
+                          <label style="color:green;">
+                            {{i.exam_answer1}} <i class="glyphicon glyphicon-ok-sign"></i> 
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 1 && i.exam_correct_answer == 1 ">
+                          <label style="color:blue;">
+                            {{i.exam_answer1}}
+                          </label>
+                        </div>
+                        <div ng-if="i.ans == 1 && i.exam_correct_answer != 1 ">
+                          <label style="color:red;">
+                            {{i.exam_answer1}} <i class="glyphicon glyphicon-remove-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 1 && i.exam_correct_answer != 1 ">
+                          <label>
+                            {{i.exam_answer1}}
+                          </label>
+                        </div>
+                      </div>
+                      <div class="radio">
+                        <div ng-if="i.ans == 2 && i.exam_correct_answer == 2 ">
+                          <label style="color:green;">
+                            {{i.exam_answer2}} <i class="glyphicon glyphicon-ok-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 2 && i.exam_correct_answer == 2 ">
+                          <label style="color:blue;">
+                            {{i.exam_answer2}}
+                          </label>
+                        </div>
+                        <div ng-if="i.ans == 2 && i.exam_correct_answer != 2 ">
+                          <label style="color:red;">
+                            {{i.exam_answer2}} <i class="glyphicon glyphicon-remove-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 2 && i.exam_correct_answer != 2 ">
+                          <label>
+                            {{i.exam_answer2}}
+                          </label>
+                        </div>
+                      </div>
+                      <div class="radio">
+                        <div ng-if="i.ans == 3 && i.exam_correct_answer == 3 ">
+                          <label style="color:green;">
+                            {{i.exam_answer3}} <i class="glyphicon glyphicon-ok-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 3 && i.exam_correct_answer == 3 ">
+                          <label style="color:blue;">
+                            {{i.exam_answer3}}
+                          </label>
+                        </div>
+                        <div ng-if="i.ans == 3 && i.exam_correct_answer != 3 ">
+                          <label style="color:red;">
+                            {{i.exam_answer3}} <i class="glyphicon glyphicon-remove-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 3 && i.exam_correct_answer != 3 ">
+                          <label>
+                            {{i.exam_answer3}}
+                          </label>
+                        </div>
+                      </div>
+                      <div class="radio">
+                        <div ng-if="i.ans == 4 && i.exam_correct_answer == 4 ">
+                          <label style="color:green;">
+                            {{i.exam_answer4}} <i class="glyphicon glyphicon-ok-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 4 && i.exam_correct_answer == 4 ">
+                          <label style="color:blue;">
+                            {{i.exam_answer4}}
+                          </label>
+                        </div>
+                        <div ng-if="i.ans == 4 && i.exam_correct_answer != 4 ">
+                          <label style="color:red;">
+                            {{i.exam_answer4}} <i class="glyphicon glyphicon-remove-sign"></i>
+                          </label>
+                        </div>
+                        <div ng-if="i.ans != 4 && i.exam_correct_answer != 4 ">
+                          <label>
+                            {{i.exam_answer4}}
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </ons-col>
+                </ons-row>
+              </ons-list-item>
+              <ons-list-item class="timeline-li">
+              </ons-list-item>
+            </ons-list>
+
+        </ons-page>
+    </ons-template>

@@ -1,0 +1,55 @@
+<!-- EXAM DESC -->
+
+    <ons-template id="evaluation.html" >
+        <ons-page>
+            <ons-toolbar fixed-style>
+              <div class="right">
+                
+              </div>
+              <div class="center"></div>
+              <div class="left">
+                <!-- <ons-toolbar-button> -->
+                  <!-- <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon> -->
+                <!-- </ons-toolbar-button> -->
+                <!-- <ons-toolbar-button ng-click="myNavigator.popPage();">
+                  <ons-icon icon="ion-arrow-left-c" fixed-width="false"></ons-icon>
+                </ons-toolbar-button> -->
+              </div>
+            </ons-toolbar>
+
+            <ons-list class="timeline" modifier="inset">
+              <ons-list-item class="timeline-li">
+                <ons-row>
+                  <ons-col style="text-align:center">
+                      <label>Exam Result</label>
+                  </ons-col>
+                </ons-row>
+              </ons-list-item>
+              <ons-list-item class="timeline-li questionnaire">
+                <ons-row>      
+                  <ons-col class="question" width="150px"><label>Items :</label></ons-col>
+                  <ons-col> <span id="items"></span></ons-col>   
+                </ons-row>
+                <br>
+                <ons-row>      
+                  <ons-col class="question" width="150px"><label>Rating :</label></ons-col>
+                  <ons-col><span id="rating"></span></ons-col>   
+                </ons-row>
+                <br>
+                <ons-row>      
+                  <ons-col class="question" width="150px"><label>Grade :</label></ons-col>
+                  <ons-col><span id="grade"></span></ons-col>   
+                </ons-row>
+                <br>
+                <ons-row>      
+                  <ons-col class="question" width="150px"><label>Evaluation :</label></ons-col>
+                  <ons-col><b><span id="evaluation"></span></b></ons-col>   
+                </ons-row>
+                <br>
+              </ons-list-item>
+              <ons-list-item class="timeline-li">
+                <button class="button button--large sbmit-btn" ng-click="back()">Back to Exams</button>
+              </ons-list-item>
+            </ons-list>
+        </ons-page>    
+    </ons-template>

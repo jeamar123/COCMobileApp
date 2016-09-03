@@ -1,0 +1,27 @@
+<ons-template id="login.html">
+      <!-- LOG IN -->
+
+        <ons-page>
+          <ons-toolbar fixed-style>
+            
+            <div class="left">
+              <ons-toolbar-button onclick="myNavigator.popPage({ animation: 'fade' });"><ons-icon icon="ion-arrow-left-c" fixed-width="false"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center"></div>
+            <div class="right"></div>
+          </ons-toolbar>
+
+          <div class="login-form">
+
+            <input id="id_num" type="text" class="text-input--underbar" placeholder="Id Number" value="">
+            <input id="pass" type="password" class="text-input--underbar" placeholder="Password" value="">
+            <br><br>
+            <button class="button button--large login-button" onclick="login()">Log In</button>
+            <br><br>
+          </div>
+
+
+          
+        </ons-page>
+        
+    </ons-template>
